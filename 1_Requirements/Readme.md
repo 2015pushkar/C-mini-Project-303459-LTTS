@@ -11,6 +11,7 @@
 <p>The cost of the game is decided by the No. of participants requirements. It can be modelled as a game that requires a lot of software. We can add music, animation, and create an End-to-End application. We can make it an internet game that requires a large user database.Because we aim to make a simple game with a minimum user interface for this project, the cost is zero if a computer is available.</p>
 
 ## Defining Our System
+![Flowchart](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/blob/branch1_for_test_01/1_Requirements/Flowchart.jpeg)
 ><p>The game will provide you single input possibilities (1, 2, 3, 4, 5, 6, 7, 8, 9) to begin with:</p>
       1.Player 1 will be assigned 'X' and Player 2 will be assigned 'O'.
       2.Player 1 selects a location by pressing entering the number.
