@@ -58,10 +58,10 @@
 
 ##  Low level Requirements:
  
-ID | Description | Status (Implemented/Future)
+| ID | Description | Status (Implemented/Future) |
 |---|---|---|
-1. | If Player 1 enters any digit between 1 and 9, it should mark 'X' and return invalid if it has already been marked. | Future
-2. | If Player 2 enters any digit between 1 and 9, it should mark 'O' and return invalid if it has already been marked. | Future
-3. | If a player chooses a square number that has already been chosen by another player, the message "Invalid move" appears. | Future
-4. | If there is no outcome after the specified moves, the message "Game Draw" is displayed. | Future
+| 1. | If Player 1 enters any digit between 1 and 9, it should mark 'X' and return invalid if it has already been marked. | Future |
+| 2. | If Player 2 enters any digit between 1 and 9, it should mark 'O' and return invalid if it has already been marked. | Future |
+| 3. | If a player chooses a square number that has already been chosen by another player, the message "Invalid move" appears. | Future |
+| 4. | If there is no outcome after the specified moves, the message "Game Draw" is displayed. | Future |
 
