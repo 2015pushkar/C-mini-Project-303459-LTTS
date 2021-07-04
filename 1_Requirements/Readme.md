@@ -46,13 +46,13 @@
 # Detail requirements
 ## High Level Requirements:
 
-ID | Description | Status (Implemented/Future)
+| ID | Description | Status (Implemented/Future) |
 |---|---|---|
-1. | To play the game, the player must see a 3x3 grid. | Future
-2. | The player should be able to place the mark in any square of his choice. | Future
-3. | If a player is able to match his mark diagonally, vertically, or horizontally, he should be declared the winner. | Future
-4. | If Player 1 loses, Player 2 wins, and vice versa. | Future
-5. | Both players will end up with a draw. | Future
+| 1. | To play the game, the player must see a 3x3 grid. | Future |
+| 2. | The player should be able to place the mark in any square of his choice. | Future |
+| 3. | If a player is able to match his mark diagonally, vertically, or horizontally, he should be declared the winner. | Future |
+| 4. | If Player 1 loses, Player 2 wins, and vice versa. | Future |
+| 5. | Both players will end up with a draw. | Future |
    
 
 
