@@ -14,12 +14,12 @@ The cost of the game is decided by the No. of participants requirements. It can 
 
 ## Defining Our System
 >The game will provide you single input possibilities (1, 2, 3, 4, 5, 6, 7, 8, 9) to begin with:
-      -Player 1 will be assigned 'X' and Player 2 will be assigned 'O'.
-      -Player 1 selects a location by pressing entering the number.
-      -Player 2 selects a location by pressing entering the number.
+      1.Player 1 will be assigned 'X' and Player 2 will be assigned 'O'.
+      2.Player 1 selects a location by pressing entering the number.
+      3.Player 2 selects a location by pressing entering the number.
 >The game reaches a draw, that is, when all nine moves have been performed and no one has won, the game is over.
-      -Player 1 is the winner.
-      -Player 2 is the winner.
+      1.Player 1 is the winner.
+      2.Player 2 is the winner.
 ## SWOT ANALYSIS
 ![SWOT-Sample](Link to Pic)
 
