@@ -9,17 +9,17 @@ With the advancements of the Windows operating system People all around the worl
 This project's goal is to create a Tic-Tac-Toe game for mobile devices. Because there is no killing in this game, as has been the case in recent years, it will not have an adverse effect on children's brains. The controls are simple enough that anyone of any age can play this game.
 ## Cost and Features and Timeline
 ![Description](Link to Pic)
-The cost of the game is decided by the No. of participants requirements. It can be modelled as a game that requires a lot of software. We can add music, animation, and create an End-to-End application. We can make it an internet game that requires a large user database.Because we aim to make a simple game with a minimum user interface for this project, the cost is zero if a computer is available.
+<p>The cost of the game is decided by the No. of participants requirements. It can be modelled as a game that requires a lot of software. We can add music, animation, and create an End-to-End application. We can make it an internet game that requires a large user database.Because we aim to make a simple game with a minimum user interface for this project, the cost is zero if a computer is available.</p>
 
 
 ## Defining Our System
->The game will provide you single input possibilities (1, 2, 3, 4, 5, 6, 7, 8, 9) to begin with:
-      1.Player 1 will be assigned 'X' and Player 2 will be assigned 'O'.
-      2.Player 1 selects a location by pressing entering the number.
-      3.Player 2 selects a location by pressing entering the number.
->The game reaches a draw, that is, when all nine moves have been performed and no one has won, the game is over.
-      1.Player 1 is the winner.
-      2.Player 2 is the winner.
+><p>The game will provide you single input possibilities (1, 2, 3, 4, 5, 6, 7, 8, 9) to begin with:</p>
+      1.<p>Player 1 will be assigned 'X' and Player 2 will be assigned 'O'.</p>
+      2.<p>Player 1 selects a location by pressing entering the number.</p>
+      3.<p>Player 2 selects a location by pressing entering the number.</p>
+><p>The game reaches a draw, that is, when all nine moves have been performed and no one has won, the game is over.</p>
+      1.<p>Player 1 is the winner.</p>
+      2.<p>Player 2 is the winner.</p>
 ## SWOT ANALYSIS
 ![SWOT-Sample](Link to Pic)
 
