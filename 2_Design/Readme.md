@@ -3,7 +3,7 @@
 ## High Level Design 
 
 TBD Structural and Behavioural Diagram
-<![HighLevelStructuralDiagram](Link to Pic)>
+< [HighLevelStructuralDiagram](Link to Pic) >
 <p>![Behavioural Diagram_Player 1 won](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/blob/branch1_for_test_01/2_Design/Player1%20won.jpeg)</p>
 
 <p>![Behavioural Diagram_Player 2 won](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/blob/branch1_for_test_01/2_Design/Player2%20won.jpeg)</p>
