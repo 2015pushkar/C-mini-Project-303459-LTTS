@@ -19,7 +19,7 @@
       1.Player 1 is the winner.
       2.Player 2 is the winner.
 ## SWOT ANALYSIS
-![SWOT-Sample](Link to Pic)
+![SWOT-Analysis](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/blob/branch1_for_test_01/1_Requirements/SWOT%20Analysis.jpeg)
 
 # 4W&#39;s and 1&#39;H
 
