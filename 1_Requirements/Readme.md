@@ -25,30 +25,41 @@
 
 ## Who:
 
-**TBD**
+**This is a two-player game with no age restrictions. This game is suitable for people of all ages. It can also be used by businesses.**
 
 ## What:
 
-**TBD**
+**Instead of using pen and paper, it is played on a computer, which has an environmental benefit as well. The goal of this game is to match three of your tokens (X or O) on the board in a row, column, or diagonally. It is played on a 3 x 3 grid of available cells. This game assists users in making better decisions.**
 
 ## When:
 
-**TBD**
+**If someone has access to a computer, he or she can play this game at any time. This game is mostly a stalemate, So you can play this if you don't want to lose or if you don't want to use much of your brain. This game can be played whenever you are bored or want to figure out the game's methods, outcomes, and situations.**
 
 ## Where:
 
-**TBD**
+**This game must be installed on a computer or laptop. A simple tic tac toe game is available on a number of websites. It can be played by anyone, at any time, and from any location. As a result, tic-tac-toe is most commonly played by people of all ages, many of whom have not yet discovered the best strategy.**
 
 ## How:
 
-**TBD**
+**The game is played between two players, with one player moving by 'X' and the other by '0', and after certain conditions are met, one player is declared the winner or the game is draw. A player must place three of their marks in a horizontal, vertical, or diagonal row to win.**
 
 # Detail requirements
 ## High Level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+
+ID | Description | Status (Implemented/Future)
+1. | To play the game, the player must see a 3x3 grid. | Future
+2. | The player should be able to place the mark in any square of his choice. | Future
+3. | If a player is able to match his mark diagonally, vertically, or horizontally, he should be declared the winner. | Future
+4. | If Player 1 loses, Player 2 wins, and vice versa. | Future
+5. | Both players will end up with a draw. | Future
+   
 
 
 ##  Low level Requirements:
---- TBD in Tabular Format 
--- ID | Description | Status (Implemented/Future)
+ 
+ID | Description | Status (Implemented/Future)
+1. | If Player 1 enters any digit between 1 and 9, it should mark 'X' and return invalid if it has already been marked. | Future
+2. | If Player 2 enters any digit between 1 and 9, it should mark 'O' and return invalid if it has already been marked. | Future
+3. | If a player chooses a square number that has already been chosen by another player, the message "Invalid move" appears. | Future
+4. | If there is no outcome after the specified moves, the message "Game Draw" is displayed. | Future
+
