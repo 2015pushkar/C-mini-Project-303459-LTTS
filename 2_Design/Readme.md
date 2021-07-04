@@ -5,7 +5,7 @@
 <TBD Structural and Behavioural Diagram>
 <![HighLevelStructuralDiagram](Link to Pic)>
 ![Behavioural Diagram_Player 1 won](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/blob/branch1_for_test_01/2_Design/Player1%20won.jpeg)
-![Behavioural Diagram_Player 2 won]()
+![Behavioural Diagram_Player 2 won](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/blob/branch1_for_test_01/2_Design/Player2%20won.jpeg)
 ![Behavioural Diagram_Player Draw]()
 
 ## Low Level Design 
