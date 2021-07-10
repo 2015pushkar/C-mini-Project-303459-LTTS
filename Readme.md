@@ -19,7 +19,7 @@ Folder             | Description
 
 SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
 -------|---------|----------------|----------------|---------------|-------------|--------------
-'303459' | Pushkar Pramod Wani  | Feature A, B etc    | X No     | X No   |X No   |X No     
+303459 | Pushkar Pramod Wani  | Feature A, B etc    | X No     | X No   |X No   |X No     
      
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
