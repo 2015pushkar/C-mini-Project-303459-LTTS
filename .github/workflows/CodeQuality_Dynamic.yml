@@ -18,8 +18,13 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
       run: make -C 3_Implementation/ test
+<<<<<<< HEAD
     - name: Valgrind
       run: valgrind ./3_Implementation/build/test_TIC.out.out
+=======
+    - name: Valgrid
+      run: valgrind ./3_Implementation/build/Tic-TAC-TOE.out.out
+>>>>>>> 45c8e8b8adfd658a85ad87dbc1097af2b71aff21
 
 
 
