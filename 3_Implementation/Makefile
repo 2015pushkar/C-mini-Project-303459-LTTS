@@ -1,20 +1,5 @@
-#Target_name : Dependencies
-#<TAB Space>Command
-
 # Name of the project
-PROJECT_NAME = Tic-TAC-TOE
-
-ifdef OS
-   RM = del /q
-   FixPath = $(subst /,\,$1)
-   EXEC = exe
-else
-   ifeq ($(shell uname), Linux)
-      RM = rm -rf
-      FixPath = $1
-	  EXEC = out
-   endif
-endif
+PROJECT_NAME = Tictactoe
 
 # Output directory
 BUILD = build
@@ -32,19 +17,18 @@ src/Win_Lose_CHECK.c\
 test/test_TIC-TAC-TOE.c\
 unity/unity.c\
 
-
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME)
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
 
 # All include folders with header files
 INC	= -Iinc\
 -Iunity\
 
 #Library Inlcudes
-#INCLUDE_LIBS = -lcunit
-INCLUDE_LIBS = 
+#INCLUDE_LIBS = 
+INCLUDE_LIBS = -lcunit
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -56,28 +40,41 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
-
-
-
-# Build and run the unit tests
-test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT)
+	./$(PROJECT_OUTPUT).out
 
+# Document the code using Doxygen
+doc:
+	make -C ./documentation
 
-#Coverage
-coverageCheck:$(BUILD)
-	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
 	./$(TEST_OUTPUT)
+
+analyze: test memcheck staticcheck coverage sanitize_check
+
+staticcheck:
+	cppcheck --enable=all -iunity .
+
+memcheck:
+	valgrind ./$(TEST_OUTPUT)
+
+sanitize_check:
+	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+
+coverage:$(TEST_SRC)
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+	gcov -a createboard.c
 
 # Remove all the built files, invoke by `make clean`
 clean:
-	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT)
+	rm -rf $(BUILD) $(DOCUMENTATION_OUTPUT) *.gcda *.gcno *.gcov
 
 # Create new build folder if not present
 $(BUILD):
