@@ -2,9 +2,9 @@
 
 Visit [Pages for Report -optional](using github.io option)
 
-Build | Code Quality | Unity | [Git Inspector](using github.io option)
-------|----------|-------|--------------
-[![C/C++ CI - Build Status](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml) | [![CI-Coverage](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/gcov.yml/badge.svg?branch=main)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/gcov.yml)
+Build | Code coverage | Code Quality | Unity | [Git Inspector](using github.io option)
+------|-----|-----|-------|--------------
+[![C/C++ CI - Build Status](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml) | [![CI-Coverage](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/gcov.yml/badge.svg?branch=main)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/gcov.yml) | [![Code Quality - Static Code - Cppcheck](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/cppcheck.yml/badge.svg)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/cppcheck.yml) |
 
 
 ## Folder Structure
