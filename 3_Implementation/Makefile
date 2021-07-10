@@ -68,7 +68,11 @@ sanitize_check:
 	./$(TEST_OUTPUT)
 
 coverageCheck:$(TEST_SRC)
+<<<<<<< HEAD
 	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
+=======
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+>>>>>>> 13d25f255769a41f8a737505febbfce9f7933ad3
 	./$(TEST_OUTPUT)
 	gcov -a Board_outline.c
 
