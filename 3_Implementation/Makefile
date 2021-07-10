@@ -33,7 +33,7 @@ test/test_TIC-TAC-TOE.c\
 unity/unity.c\
 
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME)
+TEST_OUTPUT = $(BUILD)/$(call FixPath,Test_$(PROJECT_NAME).EXEC)
 
 # All include folders with header files
 INC	= -Iinc\
@@ -44,7 +44,7 @@ INC	= -Iinc\
 INCLUDE_LIBS = 
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
+PROJECT_OUTPUT = $(BUILD)/$(call FixPath,$(PROJECT_NAME).EXEC)
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -56,18 +56,18 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
+	gcc $(SRC) $(INC) -o $(call FixPath,$(PROJECT_OUTPUT).EXEC)
 
 
 
 # Build and run the unit tests
 test:$(BUILD)
-	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
-	./$(TEST_OUTPUT)
+	gcc $(TEST_SRC) $(INC) -o $(call FixPath,$(TEST_OUTPUT).EXEC)
+	./$(TEST_OUTPUT).EXEC
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT)
+	$(call FixPath,./$(PROJECT_OUTPUT).EXEC)
 
 
 #Coverage
