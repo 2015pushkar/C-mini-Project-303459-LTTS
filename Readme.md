@@ -4,7 +4,7 @@ Visit [Pages for Report -optional](using github.io option)
 
 Build | Code coverage | Code Quality | Unity | [Git Inspector](using github.io option)
 ------|-----|-----|-------|--------------
-[![C/C++ CI - Build Status](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml)
+[![C/C++ CI - Build Status](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml/badge.svg)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/c-cpp.yml) | [![CI-Coverage](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/gcov.yml/badge.svg)](https://github.com/2015pushkar/C-mini-Project-303459-LTTS/actions/workflows/gcov.yml)
 
 
 ## Folder Structure
