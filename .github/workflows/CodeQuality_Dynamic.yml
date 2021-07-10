@@ -19,7 +19,11 @@ jobs:
     - name: make test
       run: make -C 3_Implementation/ test
     - name: Valgrid
+<<<<<<< HEAD
       run: valgrind ./3_Implementation/build/Tic-TAC-TOE.out.out
+=======
+      run: valgrind ./3_Implementation/build
+>>>>>>> 5b9149c8e7204cd6549cc81a6e57a40d9793eecf
 
    
 
