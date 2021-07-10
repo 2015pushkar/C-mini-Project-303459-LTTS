@@ -4,6 +4,18 @@
 # Name of the project
 PROJECT_NAME = Tic-TAC-TOE
 
+ifdef OS
+   RM = del /q
+   FixPath = $(subst /,\,$1)
+   EXEC = exe
+else
+   ifeq ($(shell uname), Linux)
+      RM = rm -rf
+      FixPath = $1
+	  EXEC = out
+   endif
+endif
+
 # Output directory
 BUILD = build
 
@@ -21,7 +33,7 @@ test/test_TIC-TAC-TOE.c\
 unity/unity.c\
 
 
-TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
+TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME)
 
 # All include folders with header files
 INC	= -Iinc\
@@ -32,7 +44,7 @@ INC	= -Iinc\
 INCLUDE_LIBS = 
 
 # Project Output name
-PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
+PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME)
 
 # Document files
 DOCUMENTATION_OUTPUT = documentation/html
@@ -44,23 +56,23 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
 
-# Call `make run` to run the application
-run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
 
-# Document the code using Doxygen
-#doc:
-#	make -C ./documentation
 
 # Build and run the unit tests
 test:$(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
+
+# Call `make run` to run the application
+run:$(PROJECT_NAME)
+	./$(PROJECT_OUTPUT)
+
+
 #Coverage
 coverageCheck:$(BUILD)
-	g++ -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
+	gcc -fprofile-arcs -ftest-coverage -fPIC -O0 $(TEST_SRC) $(INC) -o $(TEST_OUTPUT)
 	./$(TEST_OUTPUT)
 
 # Remove all the built files, invoke by `make clean`
