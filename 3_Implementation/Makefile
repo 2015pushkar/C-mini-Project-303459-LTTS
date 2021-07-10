@@ -11,7 +11,14 @@ BUILD = build
 SRC = main.c\
 src/Board_outline.c\
 src/Values_board.c\
-src/Win_Lose_CHECK.c
+src/Win_Lose_CHECK.c\
+
+# All test source files
+TEST_SRC = src/Board_outline.c\
+src/Values_board.c\
+src/Win_Lose_CHECK.c\
+test/test_TIC-TAC-TOE.c\
+unity/unity.c\
 
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
@@ -21,8 +28,8 @@ INC	= -Iinc\
 -Iunity\
 
 #Library Inlcudes
-#INCLUDE_LIBS = 
-INCLUDE_LIBS = -lcunit
+#INCLUDE_LIBS = -lcunit
+INCLUDE_LIBS = 
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
@@ -43,6 +50,27 @@ all: $(SRC) $(BUILD)
 run:$(PROJECT_NAME)
 	./$(PROJECT_OUTPUT).out
 
+# Build and run the unit tests
+test:$(BUILD)
+	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+
+analyze: test memcheck staticcheck coverage sanitize_check
+
+staticcheck:
+	cppcheck --enable=all -iunity .
+
+memcheck:
+	valgrind ./$(TEST_OUTPUT)
+
+sanitize_check:
+	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+
+coverage:$(TEST_SRC)
+	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
+	./$(TEST_OUTPUT)
+	gcov -a createboard.c
 
 # Remove all the built files, invoke by `make clean`
 clean:

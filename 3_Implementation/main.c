@@ -13,7 +13,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include "Header_for_TIC.h"
-char box[10]={'0','1','2','3','4','5','6','7','8','9'};
+char box[10]={'0','1','2','3','4','5','6','7','8','9'}; /**<Array of characters*/
 
 /*char X,O;
 
@@ -54,7 +54,7 @@ int main()
         printf("Player %d, enter a number: ",player);
         scanf("%d",&choice);
 
-        mark = (player==1) ? 'X' : 'O';
+        mark = (player==1) ? 'X' : 'O'; /**<player1 -> 'X' and player2 -> 'O'*/
         Values_board(choice,mark);
 
         i=Win_Lose_CHECK();
@@ -65,9 +65,9 @@ int main()
     Board_outline();
 
     if(i==1)
-        printf("Player %d  you have won the game",--player);
+        printf("Player %d  you have won the game",--player);/**< Either of the player won the game*/
     else
-        printf("Match Draw, Better luck next time\n");
+        printf("Match Draw, Better luck next time\n"); /**<Match draw better luck next time*/
 
 
     return 0;

@@ -14,7 +14,7 @@
 void Board_outline()
 {
 	printf("\n\n\tTic Tac Toe\n\n");
-    printf("Player 1 (X) -- Player 2 (O)\n\n");
+    printf("Player 1 (X) --V/s-- Player 2 (O)\n\n");
     printf(" _____ _____ _____\n");
     printf("|     |     |     |\n");
     printf("| %c   | %c   | %c   | \n",box[1],box[2],box[3]);
