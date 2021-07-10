@@ -1,0 +1,39 @@
+        -:    0:Source:src/Board_outline.c
+        -:    0:Graph:Board_outline.gcno
+        -:    0:Data:Board_outline.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:/**
+        -:    2: * @file Board_outline.c
+        -:    3: * @author Pushkar Pramod Wani (pushkarwani2015@gmail.com)
+        -:    4: * @brief  To print the board outline when executed
+        -:    5: * @version 0.1
+        -:    6: * @date 2021-07-07
+        -:    7: * 
+        -:    8: * @copyright Copyright (c) 2021
+        -:    9: * 
+        -:   10: */
+        -:   11:
+        -:   12:#include "Header_for_TIC.h"
+        -:   13:
+    #####:   14:void Board_outline()
+        -:   15:{
+    #####:   16:	printf("\n\n\tTic Tac Toe\n\n");
+    %%%%%:   16-block  0
+    #####:   17:    printf("Player 1 (X) --V/s-- Player 2 (O)\n\n");
+    #####:   18:    printf(" _____ _____ _____\n");
+    #####:   19:    printf("|     |     |     |\n");
+    #####:   20:    printf("| %c   | %c   | %c   | \n",box[1],box[2],box[3]);
+    #####:   21:    printf("|_____|_____|_____|\n");
+    #####:   22:    printf("|     |     |     | \n");
+    #####:   23:    printf("| %c   | %c   | %c   |  \n",box[4],box[5],box[6]);
+    #####:   24:    printf("|_____|_____|_____|\n");
+    #####:   25:    printf("|     |     |     | \n");
+    #####:   26:    printf("| %c   | %c   | %c   |   \n",box[7],box[8],box[9]);
+    #####:   27:    printf("|_____|_____|_____|\n");
+        -:   28:    
+        -:   29:
+        -:   30:
+    #####:   31:}
+        -:   32:
+        -:   33:  
