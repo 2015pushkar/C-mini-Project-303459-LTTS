@@ -25,7 +25,7 @@ INC	= -Iinc\
 
 #Library Inlcudes
 #INCLUDE_LIBS = 
-INCLUDE_LIBS =
+#INCLUDE_LIBS =
 
 # Project Output name
 PROJECT_OUTPUT = $(BUILD)/$(PROJECT_NAME).out
@@ -51,7 +51,7 @@ doc:
 	make -C ./documentation
 
 # Build and run the unit tests
-test:$(BUILD)
+test: $(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 
@@ -67,12 +67,8 @@ sanitize_check:
 	gcc -fsanitize=address -fno-omit-frame-pointer $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 
-coverageCheck:$(TEST_SRC)
-<<<<<<< HEAD
+coverageCheck: $(TEST_SRC)
 	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
-=======
-	gcc -fprofile-arcs -ftest-coverage $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) $(INCLUDE_LIBS)
->>>>>>> 13d25f255769a41f8a737505febbfce9f7933ad3
 	./$(TEST_OUTPUT)
 	gcov -a Board_outline.c
 
