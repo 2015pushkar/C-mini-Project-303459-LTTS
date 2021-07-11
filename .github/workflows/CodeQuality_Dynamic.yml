@@ -18,5 +18,5 @@ jobs:
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
       run: |
-        make -C C-mini-Project-303459-LTTS/3_Implementation/ 
+        make test -C C-mini-Project-303459-LTTS/3_Implementation/ 
         valgrind ./C-mini-Project-303459-LTTS/3_Implementation/build/Test_test_TIC.out
