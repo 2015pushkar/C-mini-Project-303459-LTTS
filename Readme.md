@@ -17,9 +17,9 @@ Folder             | Description
 
 ## Contributors List and Summary
 
-SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|No Test Cases|Test Case Pass
--------|---------|----------------|----------------|---------------|-------------|--------------
-303459 | Pushkar Pramod Wani  | Feature A, B etc    | X No     | X No   |X No   |X No     
+SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|
+-------|---------|----------------|----------------|---------------|------------|
+303459 | Pushkar Pramod Wani  | Feature A, B etc    | 2 No     | 1 No   |
      
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
