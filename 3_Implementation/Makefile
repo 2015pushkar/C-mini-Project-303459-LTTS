@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = test_TIC
+PROJECT_NAME = TIC
 
 # Output directory
 BUILD = build
@@ -14,7 +14,7 @@ src/Win_Lose_CHECK.c\
 TEST_SRC = src/Board_outline.c\
 src/Values_board.c\
 src/Win_Lose_CHECK.c\
-test/test_TIC-TAC-TOE.c\
+test/TIC-TAC-TOE_unittest.c\
 unity/unity.c\
 
 TEST_OUTPUT = $(BUILD)/Test_$(PROJECT_NAME).out
@@ -40,11 +40,11 @@ $(PROJECT_NAME):all
 .PHONY: run clean test doc all
 
 all: $(SRC) $(BUILD)
-	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT).out
+	gcc $(SRC) $(INC) -o $(PROJECT_OUTPUT)
 
 # Call `make run` to run the application
 run:$(PROJECT_NAME)
-	./$(PROJECT_OUTPUT).out
+	./$(PROJECT_OUTPUT)
 
 # Document the code using Doxygen
 doc:
@@ -55,7 +55,7 @@ test: $(BUILD)
 	gcc $(TEST_SRC) $(INC) -o $(TEST_OUTPUT) 
 	./$(TEST_OUTPUT)
 
-analyze: test memcheck staticcheck coverage sanitize_check
+analyze: test memcheck staticcheck coverageCheck sanitize_check
 
 staticcheck:
 	cppcheck --enable=all -iunity .
