@@ -1,5 +1,5 @@
 # Name of the project
-PROJECT_NAME = test_TIC
+PROJECT_NAME = TIC
 
 # Output directory
 BUILD = build
