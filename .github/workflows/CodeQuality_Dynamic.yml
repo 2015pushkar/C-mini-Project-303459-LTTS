@@ -17,12 +17,6 @@ jobs:
         sudo apt-get -y install valgrind
         sudo apt-get -y install libcunit1 libcunit1-doc libcunit1-dev 
     - name: make test
-<<<<<<< HEAD
-      run: make -C 3_Implementation/ test
-    - name: Valgrid
-      run: valgrind ./3_Implementation/build/Test_TIC.out
-=======
       run: |
         make test -C ./3_Implementation/test
         valgrind ./3_Implementation/build/Test_TIC.out
->>>>>>> 180205ae61a0ac825e18d8a3a2acd18cc9c43590
