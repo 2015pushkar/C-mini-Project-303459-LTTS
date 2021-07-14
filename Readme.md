@@ -19,7 +19,7 @@ Folder             | Description
 
 | SF Id. |  Name   |    Features    | Issuess Raised |Issues Resolved|
 |-------|---------|----------------|----------------|---------------|
-| 303459 | Pushkar Pramod Wani  | Feature A, B etc    | 2 No     | 1 No   |
+| 303459 | Pushkar Pramod Wani  | Feature A, B etc    | 2 No     | 2 No   |
      
 ## Learning Resources
 1. [markdownCheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
