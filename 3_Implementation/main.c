@@ -53,6 +53,11 @@ int main()
 
         printf("Player %d, enter a number: ",player);
         scanf("%d",&choice);
+         if(choice == 0)
+        {
+          printf("Wrong input");
+          return 0;
+        }
 
         mark = (player==1) ? 'X' : 'O'; /**<player1 -> 'X' and player2 -> 'O'*/
         Values_board(choice,mark);
